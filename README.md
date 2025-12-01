@@ -62,3 +62,14 @@ npm install react-toastify
 ```bash
 npm install js-cookie
 ```
+
+
+## 環境設定（.env）ファイル
+```.env
+# 動作モード
+VITE_MODE=DEV
+
+# 接続先
+VITE_URL_API_DOMAIN_STUB=https://gzypnpuem4.execute-api.ap-northeast-1.amazonaws.com/stub/read
+VITE_URL_API_DOMAIN_DEV=
+```

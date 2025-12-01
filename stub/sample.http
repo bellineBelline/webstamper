@@ -1,0 +1,19 @@
+###==================================================
+#   データ取得
+###==================================================
+PUT https://gzypnpuem4.execute-api.ap-northeast-1.amazonaws.com/stub/read/api/test/sample
+Content-Type:application/json
+
+###==================================================
+#   データ取得
+###==================================================
+POST https://gzypnpuem4.execute-api.ap-northeast-1.amazonaws.com/stub/writeuwrite
+Content-Type: application/json
+x-status: 200
+x-method: PUT
+x-path: api/test/sample
+
+{ 
+    "message": "success"
+}
+

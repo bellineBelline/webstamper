@@ -1,0 +1,33 @@
+###==================================================
+#   ログイン
+###==================================================
+POST https://gzypnpuem4.execute-api.ap-northeast-1.amazonaws.com/stub/read/api/webstamper/login
+Content-Type:application/json
+
+{
+    "userId": "isgr244",
+    "hashedPass": "hashedhashedhashed"
+}
+
+
+###==================================================
+#   データ取得
+###==================================================
+POST https://gzypnpuem4.execute-api.ap-northeast-1.amazonaws.com/stub/writeuwrite
+Content-Type: application/json
+x-status: 200
+x-method: POST
+x-path: api/webstamper/login
+
+{ 
+    "result": "success",
+    "content": {
+        "surName": "テスト",
+        "givenName": "ユーザー",
+        "email": "test@example.com",
+        "accessToken": "tokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentokentoken",
+        "refreshToken": "refreshTokenrefreshTokenrefreshTokenrefreshTokenrefreshTokenrefreshTokenrefreshTokenrefreshTokenrefreshTokenrefreshTokenrefreshTokenrefreshTokenrefreshTokenrefreshTokenrefreshToken",
+        "authority": 2,
+    }
+}
+
