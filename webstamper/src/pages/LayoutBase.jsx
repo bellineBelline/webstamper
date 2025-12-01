@@ -6,9 +6,7 @@ export default function LayoutBase() {
     const location = useLocation();
 
     useEffect(() => {
-        // ページ遷移時に、スクロールを一番上まで戻す
-        window.scrollTo(0, 0);
-    }, [location])
+    }, [])
 
     return (
         <div id='container_root'>

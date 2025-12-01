@@ -16,7 +16,7 @@ export default function Page_Home() {
 
     return (
         <>
-            <Spinner />
+            Home
         </>
     )
 }

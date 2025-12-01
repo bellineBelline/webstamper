@@ -1,7 +1,7 @@
 /* ローディング表示に関連するスタイル */
 
 .spinner_overlay {
-     position: flex;
+     position: fixed;
      top: 0;
      left: 0;
      width: 100%;
@@ -13,25 +13,18 @@
      align-items: center;
      z-index: 9999;
 }
-
+    
 .spinner {
     width: 50px;
     height: 50px;
+    border: 4px solid rgba(0,0,0,0.1); /* ベースの色 */
+    border-top: 4px solid blue;         /* 回る部分の色 */
     border-radius: 50%;
-    /* border: 4px solid blue; */
-    border-top: 5px solid blue;
-    background-color: transparent;
-    box-shadow: 0 0 15px rgba(52, 152, 224, 0.6);
-    animation: spin 0.5s linear infinite;
+    animation: spin 0.6s linear infinite;
+    box-sizing: border-box;
 }
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
-    50% {
-        /* border: 10px solid rgb(179, 255, 255); */
-        /* border-radius: 0; */
-        /* transform: rotate(100deg); */
-        /* animation-timing-function: linear; */
-    }
     100% { transform: rotate(360deg); }
 }
